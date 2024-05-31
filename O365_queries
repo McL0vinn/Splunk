@@ -10,3 +10,4 @@ index=o365 eventtype=o365_alerts body="Email sending limit exceeded" AlertEntity
 index=o365 eventtype=o365_alerts body="Ransomware activity" “user email address"
 index=o365 eventtype=o365_alerts body="Form blocked due to potential phishing attempt" AlertEntityId="user email address"
 index=o365 eventtype=o365_alerts body="Suspicious inbox manipulation rule" “user email address”
+index=o365 eventtype=o365_alerts body="Activity from a password-spray associated IP address" “user email address”
