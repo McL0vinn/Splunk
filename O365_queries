@@ -1,0 +1,12 @@
+O365 queries
+============================
+
+index=o365 app=Exchange Operation="New-InboxRule" UserId="user email address" 
+Identify new inbox rules on a user's mailbox.useful if you are suspecting a user's mailbox might be compromised and an attacker is diverting legitimate comms out of the user's mailbox.
+
+index=o365 app=MicrosoftForms UserId="user email address"
+
+index=o365 eventtype=o365_alerts body="Email sending limit exceeded" AlertEntityId="user email address"
+index=o365 eventtype=o365_alerts body="Ransomware activity" “user email address"
+index=o365 eventtype=o365_alerts body="Form blocked due to potential phishing attempt" AlertEntityId="user email address"
+index=o365 eventtype=o365_alerts body="Suspicious inbox manipulation rule" “user email address”
