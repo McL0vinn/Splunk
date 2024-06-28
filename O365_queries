@@ -13,3 +13,5 @@ index=o365 eventtype=o365_alerts body="Suspicious inbox manipulation rule" “us
 index=o365 eventtype=o365_alerts body="Activity from a password-spray associated IP address" “user email address”
 
 
+index=O365 app=Exchange action=deleted | table AffectedItems{}.ParentFolder.Path,AffectedItems{}.Subject, DestFolder.Path, Operation
+index=O365 app=SharePoint action=downloaded
