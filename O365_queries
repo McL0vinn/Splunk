@@ -15,3 +15,4 @@ index=o365 eventtype=o365_alerts body="Activity from a password-spray associated
 
 index=O365 app=Exchange action=deleted | table AffectedItems{}.ParentFolder.Path,AffectedItems{}.Subject, DestFolder.Path, Operation
 index=O365 app=SharePoint action=downloaded
+index=O365 app=Onedrive  action=modified  Operation=FileRecycled
