@@ -18,3 +18,18 @@ index=O365 app=SharePoint action=downloaded
 index=O365 app=Onedrive  action=modified  Operation=FileRecycled
 index=O365 SiteUrl="https://xxx.sharepoint.com/sites/xxxx/"  SourceRelativeUrl="Shared Documents/General/confidential" SourceFileName="xxx.doc"
 index=O365 SiteUrl="https://xxx.sharepoint.com/sites/xxxx/"  SourceRelativeUrl="Shared Documents/General/confidential" SourceFileName="xxx.doc" | table ObjectId, UserId, action
+
+Examining O365 index and app=Onedrive.
+
+index=O365 app=Onedrive user=xx@gmail.com  Operation=FileSyncDownloadedFull
+index=O365 app=Onedrive user=xx@gmail.com  Operation=FileDownloaded
+index=O365 app=Onedrive user=xx@gmail.com Operation=FileRecycled
+index=O365 app=Onedrive user=xx@gmail.com  Operation=FolderRecycled
+
+
+Examining O365 index and app=Sharepoint.
+
+index=O365 app=SharePoint user=xx@gmail.com Operation=FileDownloaded
+index=O365 app=SharePoint user=xx@gmail.com Operation= FileSyncDownloadedFull
+index=O365 app=SharePoint user=xx@gmail.com Operation= FileRecycled
+index=O365 app=SharePoint user=xx@gmail.com Operation= FolderRecycled
